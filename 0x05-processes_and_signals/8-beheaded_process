@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Find every running 7-highlander PID and send each a SIGKILL (9)
+while read -r pid; do
+  kill -9 "$pid"
+done < <(pgrep -f "7-highlander")

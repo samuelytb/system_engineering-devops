@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays the pid whos name contain the word "bash"
+
+ps auxf | grep bash
